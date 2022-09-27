@@ -177,7 +177,7 @@ Room.post("/Room/Customer",function(req,res){
 
 
 //Get all Customers with booking Rooms (POST METHOD)
-Room.get("/Rooms/Customers",function(req,res){
+Room.get("/Rooms/Customers",function(req,res) {
     res.send(
         Data.filter((Availability)=>{
             if(Availability.bookedStatus == true){
